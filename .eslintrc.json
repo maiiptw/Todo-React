@@ -15,11 +15,20 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react","react-hooks"],
   "rules": {
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
     "space-before-function-paren": ["error", "never"],
-    "comma-dangle": ["error", "never"]
+    "comma-dangle": ["error", "never"],
+    "generator-star-spacing": 0,
+    "import/named": 2,
+    "import/namespace": [2, { "allowComputed": true }],
+    "import/default": 2,
+    "import/export": 2,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-uses-react": 0,
+    "react/react-in-jsx-scope": 0
   }
 }
